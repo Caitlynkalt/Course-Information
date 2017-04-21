@@ -17,6 +17,7 @@ def display_larger_than_n_list(n, n_list):
     for value in n_list:
     #Determins if a value is greater than n.
         if value > n:
-            print(value)
+            larger_than_n_list.append(value)
+    print(larger_than_n_list)
 #Call the main function
 main()
