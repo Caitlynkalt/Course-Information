@@ -13,7 +13,7 @@ def main():
 
 def date_split(date):
     dateSplit = date.split("/")
-    #dateSplit would be ['02','28','1997']
+    #dateSplit would be something like ['02','28','1997']
     monthnumber = int(dateSplit[0])
     datenumber = int(dateSplit[1])
     year = int(dateSplit[2])
