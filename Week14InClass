@@ -1,0 +1,22 @@
+def main():
+    course_room = create_room()
+    course_instructor = create_instructor()
+    course_time = create_time()
+    course = input('Enter a course number you wish to look up:')
+    print('The room number for course', course, 'is', course_room[course])
+    print('The course instructor for course', course, 'is', course_instructor[course])
+    print('The meeting time for course', course, 'is', course_time[course])
+
+def create_room():
+    course_room = {'CS101':'3004', 'CS102': '4501', 'CS103':'6755','CS110':'1244' ,'CS241':'1411'}
+    return course_room
+
+def create_instructor():
+    course_instructor = {'CS101':'Haynes', 'CS102': 'Alvarado', 'CS103':'Rich','CS110':'Burke' ,'CS241':'Lee'}
+    return course_instructor
+
+def create_time():
+    course_time = {'CS101':'8:00a.m.', 'CS102': '9:00a.m.', 'CS103':'10:00a.m.','CS110':'11:00a.m.' ,'CS241':'1:00p.m.'}
+    return course_time
+
+main()
